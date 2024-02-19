@@ -1,0 +1,63 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h4>Ejemplo 1: Alineado de texto</h4><br />
+
+<p class="text-start">Texto a la izquierda</p>
+<p class="text-center">Texto en el centro</p>
+<p class="text-end">Texto a la derecha</p>
+<hr />
+
+<p class="text-sm-center">Texto centrado en pantallas pequeñas o más grandes</p>
+<p class="text-md-center">Texto centrado en pantallas medianas o más grandes</p>
+<p class="text-lg-center">Texto centrado en pantallas grandes o más grandes</p>
+<p class="text-xl-center">Texto centrado en pantallas extra-grandes o más grandes</p>
+<hr />
+
+<h4>Ejemplo 2: Texto dentro de etiquetas</h4><br />
+<div class="badge bg-primary text-wrap" style="width: 6rem;">
+    <!--BADGE es un contenedor estilo etiqueta de Bootstrap text-wrap = coloca el texto dentro del contenedor-->
+    Este texto  no se sale de su contenedor
+</div>
+
+<div class="badge bg-primary text-wrap text-break" style="width: 6rem;">
+    <!--BADGE es un contenedor estilo etiqueta de Bootstrap si el texto no tiene espacios para
+        ponerlo dentro del contenedor usar text-warp text-break -->
+    mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+</div>
+<hr />
+
+<h4>Ejemplo 3: Formato de texto</h4><br />
+<div>
+    <p class="text-lowercase">COLOCA TODO EL TEXTO EN MINÚSCULAS</p>
+    <p class="text-uppercase">coloca todo el texto en mayúsculas</p>
+    <p class="text-capitalize">hace que la primera letra de cada palabra sea en mayúsculas</p>
+</div>
+<hr />
+
+<h4>Ejemplo 4: Tamaños de texto</h4>
+<br />
+<p class="fs-1">Tamaño de texto .fs-1</p>
+<p class="fs-2">Tamaño de texto .fs-2</p>
+<p class="fs-3">Tamaño de texto .fs-3</p>
+<p class="fs-4">Tamaño de texto .fs-4</p>
+<p class="fs-5">Tamaño de texto .fs-5</p>
+<p class="fs-6">Tamaño de texto .fs-6</p>
+<hr />
+
+<h4>Ejemplo 5: Estilos de texto</h4><br />
+<p class="fw-bold">Texto en Negrita.</p>
+<p class="fw-bolder">Texto Más Negrita.</p>
+<p class="fw-normal">Texto Normal.</p>
+
+<p class="fw-light">Texto Ligth.</p>
+<p class="fw-lighter">Texto más Light.</p>
+<p class="fst-italic">Texto Cursiva.</p>
+
+<p class="text-decoration-underline">Texto Subrayado.</p>
+<p class="text-decoration-line-through">Texto Tachado, con una línea a través del texto.</p>
+
+<a href="#" class="">Enlace CON decoración</a>
+<br />
+<a href="#" class="text-decoration-none">Enlace SIN decoración</a>
