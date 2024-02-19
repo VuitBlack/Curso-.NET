@@ -1,2 +1,2 @@
-![Imágen de presentación del curso de Desarrollo Web con HTML, CSS y JAVASCRIPT](https://github.com/VuitBlack/Curso-.NET/blob/main/Images/Cabecera.png)
-![Imágen de presentación del curso de Desarrollo Web con HTML, CSS y JAVASCRIPT](https://github.com/VuitBlack/Curso-.NET/blob/main/Images/Indice.png)
+![Cabecera del curso UDEMY Aprende ASP.NET Core MVC 6 haciendo proyectos desde cero](https://github.com/VuitBlack/Curso-.NET/blob/main/Images/Cabecera.png)
+![Índice del curso UDEMY Aprende ASP.NET Core MVC 6](https://github.com/VuitBlack/Curso-.NET/blob/main/Images/Indice_del_curso.png)
