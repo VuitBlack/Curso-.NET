@@ -1,0 +1,32 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h4>Ejemplo 1: Tablas</h4>
+<!-- Con table-striped: ponemos sombreado alterno en las filas 
+     Con table-hover: se remarca la fila en la que tengo el ratón
+     Con table-bordered: se pone el bode a la tabla (no me gusta mucho) 
+     Con table-sm: se reduce el espacio de la tabla se hace más pequeña-->
+<table class="table table-striped table-hover table-bordered table-sm"> 
+    <thead>
+        <th>#</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Felipe</td>
+            <td>Gavilán</td>
+        </tr>
+        <tr class="table-success"> <!-- Con table-success: ponemos color succes en la filas a la que se lo aplico-->
+            <td>2</td>
+            <td>Claudia</td>
+            <td>Rodríguez</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td colspan="2">Roberto González</td>
+        </tr>
+    </tbody>
+</table>

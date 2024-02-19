@@ -1,0 +1,73 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h4>Ejemplo 1: Alineando la fila</h4> <!-- Se usa para alinear todas las columnas horizontalmente dentro de la fila-->
+
+<div class="row align-items-Start">
+    <div class="col">
+        Columna 1
+    </div>
+    <div class="col">
+        Columna 2
+    </div>
+    <div class="col">
+        Columna 3
+    </div>
+</div>
+<div class="row align-items-center">
+    <div class="col">
+        Columna 1
+    </div>
+    <div class="col">
+        Columna 2
+    </div>
+    <div class="col">
+        Columna 3
+    </div>
+</div>
+<div class="row align-items-end">
+    <div class="col">
+        Columna 1
+    </div>
+    <div class="col">
+        Columna 2
+    </div>
+    <div class="col">
+        Columna 3
+    </div>
+</div>
+
+<h4>Ejemplo 2: Alineando las columnas horizontalmente</h4> <!-- Se usa para alinear las columnas horizontalmente dentro de la fila-->
+<div class="row">
+    <div class="col align-self-start">
+        Columna 1
+    </div>
+    <div class="col align-self-center">
+        Columna 2
+    </div>
+    <div class="col align-self-end">
+        Columna 3
+    </div>
+</div>
+
+<h4>Ejemplo 3: Offset</h4> <!-- Se usa para dejar espacios entre columnas se usan columnas en blanco -->
+<div class="row">
+    <div class="col-3">
+        Columna 1
+    </div>
+    <div class="col-4 offset-4"> <!--Esta mal alineada al fondo porque no esta bien calculado pero puede que sea lo que deseamos
+                                     para que se aliee correctamente se necesita poner en Columna 1 dentro de div class="col-4" -->
+        Columna 2
+    </div>
+</div>
+
+<h4>Ejemplo 4: Auto Margen</h4> <!-- Se usa para asignar automaticamente el margen de la columna dentro de la fila-->
+<div class="row">
+    <div class="col-4">
+        Columna 1
+    </div>
+    <div class="col-4 ms-auto">
+        Columna 2
+    </div>
+</div>

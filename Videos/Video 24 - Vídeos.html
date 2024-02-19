@@ -1,0 +1,39 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<h4>Ejemplo 1: Vídeo sin ratio de conversión</h4> <!--El vídeo SIN RATIO no se redimensiona al redimensionar la pantalla-->
+<div>
+    Sin ratio:
+</div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bZ1dCyKLrJ8?si=SU3qhb-UqbDvlfzQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<hr />
+
+<h4>Ejemplo 2: Vídeo con ratio de conversión 16x9</h4> <!--El vídeo CON RATIO 16x9 se redimensiona para mantener este ratio-->
+<div>
+    Con ratio de 16x9
+</div>
+<div class="ratio ratio-16x9">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/bZ1dCyKLrJ8?si=SU3qhb-UqbDvlfzQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+<hr />
+
+<h4>Ejemplo 3: Vídeo con ratio de conversión 16x9 en columnas</h4> <!--El vídeo CON RATIO 16x9 se coloca en columnas-->
+<div class="row gy-4">
+    <div class="col-md-4">
+        <div class="ratio ratio-16x9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/bZ1dCyKLrJ8?si=SU3qhb-UqbDvlfzQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="ratio ratio-16x9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/bZ1dCyKLrJ8?si=SU3qhb-UqbDvlfzQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="ratio ratio-16x9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/bZ1dCyKLrJ8?si=SU3qhb-UqbDvlfzQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
