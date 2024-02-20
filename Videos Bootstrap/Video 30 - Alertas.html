@@ -1,0 +1,67 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h2>Vídeo 30: Alertas</h2><br />
+
+<h4>Ejemplo 1: Mostrar Alertas</h4>
+<br />
+<div class="alert alert-primary" role="alert">
+    A simple PRIMARY alert-check it out!
+</div>
+<div class="alert alert-secondary" role="alert">
+    A simple SECONDARY alert-check it out!
+</div>
+<div class="alert alert-success" role="alert">
+    A simple SUCCESS alert-check it out!
+</div>
+<div class="alert alert-danger" role="alert">
+    A simple DANGER alert-check it out!
+</div>
+<div class="alert alert-warning" role="alert">
+    A simple WARNING alert-check it out!
+</div>
+<div class="alert alert-info" role="alert">
+    A simple INFO alert-check it out!
+</div>
+<div class="alert alert-light" role="alert">
+    A simple LIGHT alert-check it out!
+</div>
+<div class="alert alert-dark" role="alert">
+    A simple DARK alert-check it out!
+</div>
+
+<h4>Ejemplo 2: alertas en botones</h4>
+<br />
+
+<button onclick="mostrarAlertaExito()">Muestra alerta de EXITO</button>
+<button onclick="mostrarAlertaError()">Muestra alerta de ERROR</button>
+<div>
+    Las alertas se van a mostrar aquí.
+</div>
+
+<div id="contenedor_alertas">
+
+</div>
+
+@section Scripts{
+    <script>
+        function mostrarAlertaExito() {
+            mostrarAlerta('Este es un mensaje de EXITO', 'success');
+        }
+
+        function mostrarAlertaError() {
+            mostrarAlerta('Este es un mensaje de ERROR', 'danger');
+        }
+
+        function mostrarAlerta(mensaje, tipo) {
+            const alerta = document.createElement("div");
+            alerta.innerHTML = `<div class="alert alert-${tipo} alert-dismissible fade show" role="alert">
+                                ${mensaje}
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button> 
+                                </div>`;
+            const contenedorAlertas = document.getElementById('contenedor_alertas');
+            contenedorAlertas.append(alerta)
+        }
+    </script>
+}
