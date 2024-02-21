@@ -1,0 +1,36 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h2>Vídeo 31: Carrusel de Imágenes</h2><br />
+
+
+
+<div id="carouselEjemplo" class="corousel slide" data-bs-ride="carousel">
+
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://embamex.sre.gob.mx/republicadominicana/images/stories/mapa%20rep%20dom%202.jpg" class="d-block w-100" />
+        </div>
+        <div class="carousel-item">
+            <img src="https://media.traveler.es/photos/62d128e0edccea47a113e906/16:9/w_2560%2Cc_limit/Cayo%2520Levantado_shutterstock_1896362896.jpg" class="d-block w-100" />
+        </div>
+        <div class="carousel-item">
+            <img src="https://blogs.iadb.org/ideas-que-cuentan/wp-content/uploads/sites/11/2019/03/Centroam%C3%A9rica-y-Rep%C3%BAblica-Dominicana-desaf%C3%ADos-externos-min.jpg" class="d-block w-100" />
+        </div>
+    </div>
+
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselEjemplo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carouselEjemplo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselEjemplo" data-bs-slide-to="2"></button>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselEjemplo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselEjemplo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+
+</div>
