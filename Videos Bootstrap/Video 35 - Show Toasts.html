@@ -1,0 +1,33 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h2>Vídeo 32: Mostrando Toasts</h2>
+<br />
+
+<!--Toast son pequeños mensajes que aparecen en pantalla Ej. si el usuario hace una accion correcta-->
+<button type="button" class="btn btn-primary" onclick="mostrarToast()">Mostrar Toast</button>
+
+<div class="positon-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div id="miToast" class="toast">
+        <div class="toast-header">
+            <strong class="me-auto">Mensaje Enviado</strong>
+            <small>Hace unos segundos</small>
+            <button class="btn-close" data-bs-dismiss="toast"></button>
+        </div>
+        <div class="toast-body">
+            El mensaje fue enviado a Claudia.
+        </div>
+    </div>
+</div>
+
+<!--JavaScrip para mostar el Toas-->
+@section Scripts{
+    <script>
+        function mostrarToast() {
+            var ejemploToast = document.getElementById('miToast');
+            var toast = new bootstrap.Toast(ejemploToast);
+            toast.show();
+        }
+    </script>
+ }
